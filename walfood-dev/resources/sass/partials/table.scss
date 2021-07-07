@@ -1,0 +1,194 @@
+.lista-ordini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //debug
+/*    span {
+        border: 1px solid black;
+    }*/
+    .tabella{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .heading {
+            background-color: $red;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            span {
+                display: inline-block;
+            }
+        }
+        .data {
+            cursor: pointer;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            span {
+                padding-left: 5px;
+                display: inline-block;
+            }
+            &:nth-child(odd){
+                background-color: #ffc9cd;
+            }
+            &:hover {
+                background-color: #999;
+                color: white;
+            }
+
+
+        }
+        .dettaglio-ordine {
+            width: 100%;
+            display: flex;
+            background-color: #dedfe0;
+            padding-left: 100px;
+            border-top: 1px solid $red;
+            border-bottom: 1px solid $red;
+            ul {
+
+
+                span {
+                    display: inline-block;
+                }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 50%;
+                .heading {
+                    background-color: transparent;
+                    font-size: 14px;
+                    color: $red;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+                .data {
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: inherit;
+                    cursor: default;
+                    &:hover {
+                        background-color: inherit;
+                        color: inherit;
+                    }
+                }
+                .heading, .data {
+                    .nome-p {
+                        width: 50%;
+                        text-align: left;
+                    }
+                    .quantita-p {
+                        width: 14%;
+                    }
+                    .prezzo-u {
+                        width: 20%;
+                    }
+                    .prezzo-p {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+
+        .heading, .data {
+            .ordine {
+                width: 9%;
+            }
+            .nome{
+                width: 12.5%;
+            }
+            .cognome{
+                width: 12.5%;
+            }
+            .email {
+                width: 25%;
+            }
+            .indirizzo {
+                width: 43%;
+                }
+            .telefono {
+                width: 13%;
+            }
+            .prezzo-tot {
+                width: 10%;
+            }
+            .data-ordine {
+                width: 15%;
+            }
+        }
+    }
+
+}
+.selected {
+    background-color: $green!important;
+    color: #222222;
+
+}
+.customers {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 5px 5px 10px #444;
+    margin-top: 50px;
+    tr {
+        cursor: pointer;
+    }
+
+    & td, & th {
+        padding: 8px;
+    }
+
+    & th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: rgba(219, 16, 12, 0.68);
+        color: white;
+    }
+
+    & tr:nth-child(odd) {
+        background-color: $white;
+    }
+
+    & tr:nth-child(even) {
+        background-color: #ddd;
+    }
+}
+.customers.dettaglio-ordini {
+        th {
+        background-color: #2fa360;
+    }
+    tr {
+        cursor: default;
+    }
+
+        tr:nth-child(odd) {
+            background-color: $white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ddd;
+        }
+        img {
+            height: 48px;
+
+        }
+
+}
+nav {
+    width: 100%;
+
+    .pagination {
+        width: 100%;
+        justify-content: center;
+        padding: 5px 0;
+    }
+
+}

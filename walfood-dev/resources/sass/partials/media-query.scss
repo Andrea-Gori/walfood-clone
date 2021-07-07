@@ -1,0 +1,670 @@
+@media all and (max-width: 1200px) {
+    #gallery-dish {
+        .card-dish {
+            justify-content: start;
+            .responsive-img {
+                height: 150px;
+                width: 150px;
+            }
+            .card-right {
+                margin: 0 auto;
+                .card-footer-dish {
+                    .add-chart {
+                        .responsive {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lista-ordini {
+        .tabella {
+            .heading,
+            .data {
+                justify-content: space-between;
+                .ordine {
+                    width: 11%;
+                }
+                .prezzo-tot {
+                    width: 15%;
+                }
+                .email {
+                    display: none;
+                }
+                .indirizzo {
+                    width: 50%;
+                }
+                .data-ordine {
+                    width: 18%;
+                }
+            }
+            .dettaglio-ordine {
+                ul {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .responsive {
+        display: none;
+    }
+    .gallery-dash {
+        .dashboard-card-risto {
+            width: calc(100% - 40px);
+        }
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .gallery {
+        #edit-dash {
+            margin-left: 70px;
+        }
+        &.dash-rist-rist {
+            .btn-back-dash {
+                left: -25px;
+            }
+        }
+    }
+    #gallery-dish {
+        .card-dish-responsive {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        ul {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media all and (max-width: 991px) and (min-width: 878px) {
+    .info-restaurant,
+    .info-piatti {
+        max-width: calc(100% / 2);
+    }
+}
+
+@media all and (max-width: 877px) {
+    .gallery {
+        #edit-dash {
+            display: none;
+        }
+        &.dash-rist-rist {
+            width: 100%;
+            .btn-back-dash {
+                left: -90px;
+            }
+            .dish-rest-card-responsive {
+                box-shadow: 0 0 14px 0 rgba(0 0 0 / 25%);
+                display: flex;
+                width: 100%;
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+                .card-right.dish-dash {
+                    height: 200px;
+                    width: 100%;
+                    background-color: $white;
+                    .card-header {
+                        height: 25%;
+                    }
+                    .card-body.body-dash {
+                        padding: 0;
+                        height: 30%;
+                        .lista-categorie {
+                            ul {
+                                display: flex;
+                                width: 100%;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                    .rest-foot-dash {
+                        height: 35%;
+                    }
+                }
+            }
+        }
+        &.dash-singolo-ristorante {
+            align-items: center!important;
+            .dashboard-dish-card {
+                width: 100%;
+            }
+        }
+    }
+    #gallery-dish {
+        .card-dish {
+            width: 80%;
+            .card-right {
+                .card-footer-dish {
+                    .add-chart {
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .card-dish-responsive {
+            width: 100%;
+        }
+    }
+    .sidebar {
+        input {
+            font-size: 30px;
+        }
+        .ul-side {
+            justify-content: center;
+        }
+    }
+    .card {
+        width: 100%;
+        max-width: none;
+        .card-right {
+            width: calc(100% - 200px)
+        }
+        .card-header.menu {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+    .catm {
+        height: 40px;
+        img {
+            display: none;
+        }
+        span {
+            margin-top: 0;
+            font-size: 16px;
+        }
+        &.catm-tutti {
+            i {
+                display: none;
+            }
+            padding: 5px;
+            span {
+                margin-top: 2px;
+                font-size: 16px;
+            }
+        }
+    }
+    #statistiche {
+        max-width: 860px;
+    }
+    .lista-ordini {
+        .tabella {
+            .heading,
+            .data {
+                justify-content: space-between;
+                .email,
+                .indirizzo,
+                .telefono {
+                    display: none;
+                }
+                .ordine {
+                    width: 11%;
+                }
+                .prezzo-tot {
+                    width: 15%;
+                }
+                .data-ordine {
+                    width: 30%;
+                }
+            }
+            .dettaglio-ordine {
+                padding-left: 25px;
+                ul {
+                    .heading,
+                    .data {
+                        .nome-p {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    #gallery-dish {
+        .card-dish {
+            .foto-ristorante {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        .card-dish-responsive {
+            .responsive-img {
+                height: 150px;
+                width: 150px;
+            }
+            .card-right {
+                height: 150px;
+            }
+        }
+    }
+    .carrello {
+        position: fixed;
+        top: calc(100% - 250px);
+        width: 96%;
+        height: 230px;
+        z-index: 3;
+        .cart-button {
+            top: 0;
+            height: 35px;
+            left: 100%;
+            transform: translate(-100%, -100%);
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 15px;
+        }
+    }
+    .modal-send-order {
+        .content-modal-order {
+            height: 100%;
+            .close-modal {
+                top: 50px;
+                right: 15px;
+                &:hover {
+                    color: $red;
+                }
+            }
+            .insert-customer-data {
+                .anagrafica {
+                    margin-right: 10px;
+                }
+            }
+            width: 100%;
+            .detail-order {
+                height: 100%;
+                .carrello {
+                    position: static;
+                    height: 250px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 580px) {
+    .gallery {
+        &.dash-rist-rist {
+            .btn-back-dash {
+                left: -35px;
+                top: -40px;
+                font-size: 25px;
+            }
+        }
+        &.dash-singolo-ristorante {
+            .dashboard-dish-card {
+                .dish-card-overlay-invisible {
+                    width: 85.75%;
+                }
+            }
+        }
+    }
+    .modal-send-order {
+        .content-modal-order {
+            .insert-customer-data {
+                flex-direction: column;
+                .anagrafica {
+                    margin-bottom: 20px;
+                }
+            }
+            .detail-order {
+                flex-direction: column;
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 580px) and (min-width: 501px) {
+    .modal-send-order {
+        position: sticky;
+        .content-modal-order {
+            .close-modal {
+                top: -70px;
+                right: 28px;
+            }
+            .insert-customer-data {
+                .anagrafica,
+                .payment {
+                    max-width: 100% !important;
+                }
+            }
+
+            .detail-order {
+                height: 421%;
+
+                .carrello {
+                    height: 100%;
+                }
+            }
+        }
+    }
+    #dashboard {
+        font-size: 63px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .jumbo {
+        background-position: center;
+    }
+    .gallery {
+        &.dash-rist-rist {
+            width: 100%;
+            justify-content: center;
+
+            .btn-back-dash {
+                left: -35px;
+                top: -40px;
+                font-size: 25px;
+            }
+
+            .dish-rest-card-responsive {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+
+                }
+
+                .card-right.dish-dash {
+                    height: 150px;
+                    width: 100%;
+
+                    .card-header {
+                        height: 30%;
+                    }
+                    .rest-foot-dash {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+        &.dash-singolo-ristorante {
+            align-items: center !important;
+            margin: 0;
+
+            .dashboard-dish-card {
+                flex-direction: column;
+                width: calc(100% - 150px);
+                margin-bottom: 30px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .dish-card-overlay-invisible {
+                    width: 86%;
+
+                    h3 {
+                        font-size: 35px;
+                        left: 200px;
+                        bottom: 92px;
+                    }
+                }
+
+                .card-right {
+                    &.dash-dish-card-right {
+                        flex-direction: column;
+
+                        .card-header {
+                            hr {
+                                margin: 5px 0;
+                            }
+                        }
+
+                        .foot-dish {
+                            width: 100%;
+                            flex-direction: row !important;
+                            justify-content: center !important;
+                            border: none;
+                            padding: 10px 0;
+                            border-top: 1px solid $red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sidebar {
+        .catm {
+            height: 25px;
+        }
+    }
+    .card {
+        .card-right {
+            width: calc(100% - 150px);
+            height: 150px;
+        }
+        .card-header.menu {
+            height: 100px;
+        }
+        .card-footer {
+            height: calc(150px - 100px);
+        }
+        .foto-ristorante {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .phone {
+        display: none;
+    }
+    .card-header.menu {
+        display: flex;
+        align-items: center;
+    }
+    #statistiche {
+        max-width: 450px;
+    }
+    .lista-ordini {
+        .tabella {
+            .heading,
+            .data {
+                .data-ordine {
+                    width: 33%;
+                }
+                .nome,
+                .cognome {
+                    width: 20%;
+                }
+                .prezzo-tot {
+                    width: 16%;
+                }
+            }
+            .dettaglio-ordine {
+                padding-left: 0;
+                ul {
+                    .heading,
+                    .data {
+                        .quantita-p {
+                            width: 17%;
+                        }
+                        .prezzo-p,
+                        .prezzo-u {
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .gallery-dash {
+        .dashboard-card-risto {
+            width: calc(100% - 10px);
+            height: 150px;
+            a {
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+                .card-right {
+                    .card-header.dashboard-restaurant {
+                        p {
+                            display: none;
+                        }
+                    }
+                    .card-footer {
+                        &.dashboard-restaurant {
+                            height: calc(100% - 75px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #dashboard {
+        font-size: 50px;
+    }
+    #gallery-dish {
+        .card-dish {
+            width: 95%;
+            .foto-ristorante {
+                height: 100px;
+                width: 100px;
+            }
+            .card-right {
+                height: 100px;
+                .card-header-dish {
+                    margin: 0;
+                    h6 {
+                        font-size: 12px;
+                    }
+                }
+                span {
+                    font-size: 14px
+                }
+            }
+        }
+    }
+    .modal-send-order {
+        position: sticky;
+        .content-modal-order {
+            .insert-customer-data {
+                .anagrafica,
+                .payment {
+                    max-width: 100% !important;
+                }
+            }
+            .detail-order {
+                height: 421%;
+                .carrello {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 420px) {
+    .navbar-brand {
+        margin: 0 auto;
+    }
+    .jumbo {
+        h1 {
+            font-size: 60px;
+            text-align: center;
+        }
+    }
+    #dashboard {
+        font-size: 39px;
+    }
+    .bottoni-dash-risto {
+        padding: 0;
+    }
+    .sidebar {
+        input {
+            font-size: 20px;
+        }
+    }
+    .card {
+        .card-right {
+            width: calc(100% - 100px);
+            height: 100px;
+        }
+        .card-header.menu {
+            height: 60px;
+            h5 {
+                font-size: 16px;
+            }
+        }
+        .card-footer {
+            height: calc(100px - 60px);
+        }
+        .foto-ristorante {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    #statistiche {
+        max-width: 400px;
+    }
+    .lista-ordini {
+        .tabella {
+            .heading,
+            .data {
+                .ordine {
+                    width: 23%;
+                }
+                .nome {
+                    display: none;
+                }
+                .cognome {
+                    width: 25%;
+                }
+                .ordine {
+                    width: 11%;
+                }
+                .prezzo-tot {
+                    width: 20%;
+                }
+                .data-ordine {
+                    width: 35%;
+                }
+            }
+            .heading {
+                .prezzo-tot {
+                    width: 30%;
+                }
+            }
+            .dettaglio-ordine {
+                ul {
+                    .heading,
+                    .data {
+                        .nome-p {
+                            width: 34%;
+                        }
+                        .quantita-p {
+                            width: 18%;
+                        }
+                        .prezzo-p,
+                        .prezzo-u {
+                            width: 26%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pagination {
+        max-width: 400px!important;
+    }
+}

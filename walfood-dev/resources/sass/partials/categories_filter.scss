@@ -1,0 +1,62 @@
+.catm{
+    margin: 6px;
+    width: 105px!important;
+    height: 105px;
+    padding: 5px 9px;
+    font-size: 14px;
+    color: #555;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    img {
+        width: 60px;
+        height: 60px;
+    }
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span{
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    &.lista-categorie-title {
+        color: $red;
+        height: 100%;
+        margin-top: 0;
+        font-size: 16px;
+        flex-direction: row;
+        background-color: transparent;
+       h5 {
+           margin-right: 10px;
+       }
+    }
+
+}
+.catm-tutti {
+    font-size: 40px;
+    width: 105px!important;
+    height: 105px;
+    span {
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+}
+[class^='cat-'] {
+    margin: 6px;
+    font-size: 10px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.cat-active {
+    border: none;
+    box-shadow: 4px 4px 0px -2px rgba(0, 0, 0, 0.50) inset;
+    background-color: $red;
+    color: $white;
+}
+
+.cat-not-active {
+    box-shadow: 4px 4px 0px -2px rgba(0, 0, 0, 0.50);
+
+}

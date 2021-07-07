@@ -1,0 +1,81 @@
+.pay-popup {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    p {
+        font-size: 20px;
+    }
+
+    .message {
+        color: $red;
+
+        i.fa-spinner {
+            font-size: 50px;
+            animation-name: loading;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        i.fa-check {
+            color: $green;
+            font-size: 100px;
+        }
+    }
+
+    .message-ok {
+        color: $green;
+
+        i.fa-check {
+            color: $green;
+            font-size: 100px;
+        }
+    }
+
+    .message-error {
+        color: $red;
+
+        i.fa-times {
+            color: $red;
+            font-size: 100px;
+            animation-name: error-flashing;
+            animation-duration: 300ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+    }
+
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+        color: $red;
+    }
+    50% {
+        transform: rotate(180deg);
+        color: $red-4;
+    }
+    100% {
+        transform: rotate(359deg);
+        color: $red;
+    }
+}
+
+@keyframes error-flashing {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+

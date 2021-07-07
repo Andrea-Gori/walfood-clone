@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    background-image: url('/img/menu-bg.jpg');
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        color: $black !important;
+        text-decoration: none;
+    }
+}
+
+h5 {
+    display: inline-block;
+}
+
+.container,
+.container-fluid {
+    height: 100%;
+}
+
+#app {
+    height: 100%;
+}
+
+ul {
+    margin-bottom: 0;
+    li {
+        list-style: none;
+    }
+}
+
+.btn-navbar {
+    background-color: $red;
+    color: #fff;
+    &:hover {
+        color: $navbar-color;
+        background-color: #fff;
+        border: 1px solid $red;
+    }
+}
+
+.invalido {
+    //classe per colorare i bordi delle textbox tipologie
+    border: 1px solid #D4100C;
+}

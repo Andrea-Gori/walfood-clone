@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&display=swap');
+.jumbo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-image: url('/img/jumbo-2.jpg');
+    height: 550px;
+    h1 {
+        font-family: 'Averia Gruesa Libre', cursive;
+        font-size: 70px;
+        font-weight: bolder;
+        padding-top: 1.2em;
+        color: white;
+        // da cambiare colore
+    }
+    .input-ricerca {
+        margin-top: 50px;
+        input {
+            border-radius: 4px;
+            width: 80%;
+            font-size: 35px;
+            background-color: rgba( 255, 255, 255, 0.8);
+            outline: none;
+            padding-left: 10px;
+            margin-bottom: 50px;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+#gallery-dish {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0 20px;
+    .card-dish,
+    .card-dish-responsive {
+        width: calc(100% / 2 - 30px);
+        padding: 0;
+        box-shadow: 0px 0px 14px 0px rgba(0 0 0 / 25%);
+        background-color: $white;
+        border: 0;
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        .card-right {
+            width: calc(100% - 200px);
+            margin: 0 auto;
+            .add-chart {
+                width: fit-content;
+                margin: 0 auto;
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+        .responsive-img,
+        .foto-ristorante {
+            width: 200px;
+            height: 200px;
+            img {
+                object-fit: cover;
+            }
+        }
+        .descrizione-card {
+            display: none;
+        }
+        &:hover .descrizione-card {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            font-size: 18px;
+            background-color: $red;
+            padding: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-name: tendina;
+            animation-duration: 800ms;
+            animation-timing-function: linear;
+            p {
+                opacity: 0;
+                animation-name: testo-tendina;
+                animation-fill-mode: forwards;
+                animation-duration: 800ms;
+                animation-delay: 300ms;
+                animation-timing-function: linear;
+            }
+        }
+        &:hover {
+            box-shadow: 3px 3px 10px $navbar-color;
+        }
+    }
+}

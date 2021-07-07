@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+img.card-restaurant {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 100%;
+    &.dish-dash-img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.hover-ristoranti-home:hover {
+    box-shadow: 0 0 30px $red;
+}
+
+.card-img {
+    height: 200px;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.card-header {
+    background: none;
+    border: none;
+    height: 70px;
+    h5 {
+        text-transform: uppercase;
+    }
+    &.menu {
+        height: 135px;
+    }
+    &.dish-dashboard {
+        height: 200px;
+    }
+    .dashboard-dish-price {
+        font-size: 20px;
+        margin-top: auto;
+    }
+}
+
+.card-header-dish {
+    background: none;
+    border: none;
+    margin: 10px auto;
+    h6 {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+.card {
+    display: flex;
+    max-width: calc(100% / 2 - 50px);
+    border-radius: 0;
+    padding: 0;
+    box-shadow: 0 0 14px 0 rgba(0 0 0 / 25%);
+    border: 0;
+    position: relative;
+    margin-bottom: 50px;
+    .foto-ristorante {
+        width: 200px;
+        height: 200px;
+        img {
+            object-fit: cover;
+        }
+    }
+    .card-right {
+        width: calc(100% - 200px);
+        .add-chart {
+            width: fit-content;
+            margin: 0 auto;
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+    .card-text {
+        margin-top: 10px;
+    }
+    .card-badge {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: white;
+        position: absolute;
+        right: -25px;
+        top: -25px;
+        font-size: 35px;
+        i {
+            color: $red;
+            filter: drop-shadow(3px 3px 1px #333);
+            .badge-number {
+                font-family: $font-family-sans-serif;
+                font-size: 18px;
+                position: absolute;
+                color: $white;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .card-footer {
+        height: calc(200px - 135px);
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    ul {
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+.card-login {
+    background-color: $white;
+    box-shadow: 0px 0px 14px 0px rgba(0 0 0 / 25%);
+}
+
+.card-register {
+    background-color: $white;
+    box-shadow: 0px 0px 14px 0px rgba(0 0 0 / 25%);
+}
+
+.home-card.card-body {
+    padding: 0;
+}
+
+.card-body.body-dash {
+    height: 400px;
+}
+
+.card-footer-dish {
+    #price-dish {
+        font-size: 22px;
+        font-weight: bolder;
+        display: flex;
+        flex-direction: column;
+    }
+}

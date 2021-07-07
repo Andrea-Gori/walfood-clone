@@ -1,0 +1,17 @@
+.pagination {
+    nav {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .page-link {
+        color: $navbar-color;
+    }
+    .page-item.active .page-link {
+        background-color: $navbar-color;
+        color: white;
+        border: 1px solid white;
+    }
+    .page-item.active .page-link {
+        box-shadow: 0 0 0 0.2rem rgba(250, 110, 110, 0.25);
+    }
+}

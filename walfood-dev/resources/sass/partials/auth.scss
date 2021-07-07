@@ -1,0 +1,11 @@
+#login {
+    min-height: calc(100vh - 460px);
+    padding: 120px 0;
+    .btn-link {
+        color: $navbar-color;
+    }
+}
+#registration {
+    min-height: calc(100vh - 460px);
+    padding: 50px 0;
+}

@@ -1,0 +1,56 @@
+.gallery {
+    width: 100%;
+    margin: 80px 0;
+    #edit-dash {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin-left: 150px;
+        position: sticky;
+        h4 {
+            font-weight: bold;
+        }
+        img {
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+        }
+        .card-header {
+            width: 400px;
+            background-color: $white;
+        }
+        .card-body {
+            width: 400px;
+            background-color: $white;
+            #inserisci-piatto {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
+            .lista-categorie {
+                ul {
+                    li {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    &.dash-rist-rist {
+        margin: 50px 0;
+        position: relative;
+        .dish-rest-card-responsive {
+            display: none;
+        }
+    }
+}
+
+.btn-back {
+    position: absolute;
+    z-index: 2;
+    font-size: 40px;
+    color: $red;
+}

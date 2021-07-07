@@ -1,0 +1,18 @@
+.card-body.body-dash {
+    .stats-button {
+        position: relative;
+    }
+}
+.stats-badge {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #ff3430;
+    color: white;
+    position: absolute;
+    top: -10px;
+    right: 8px;
+    text-align: center;
+    vertical-align: center;
+    line-height: 20px;
+}
